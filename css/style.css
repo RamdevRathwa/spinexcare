@@ -452,6 +452,95 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Gallery Section */
+.gallery {
+    padding: 80px 0;
+    background: var(--light-gray);
+}
+
+.gallery .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.gallery .section-header p {
+    font-size: 1.15rem;
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    letter-spacing: 0.5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5em;
+}
+
+.gallery-card {
+    background: var(--white);
+    padding: 2.2rem 1.5rem 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(30, 58, 138, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(30, 58, 138, 0.13);
+    border: 1.5px solid var(--secondary-blue);
+}
+
+.gallery-img {
+    width: auto;
+    height: auto; /* Allows image to maintain its own aspect ratio */
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 1.2rem;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.08);
+    transition: box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+
+.gallery-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.gallery-card p {
+    color: var(--gray);
+    font-size: 1.08rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
