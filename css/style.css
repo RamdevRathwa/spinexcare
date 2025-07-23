@@ -512,14 +512,15 @@ body {
 }
 
 .gallery-img {
-    width: auto;
-    height: auto; /* Allows image to maintain its own aspect ratio */
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto 1.2rem;
-    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.08);
-    transition: box-shadow 0.3s ease;
-    max-width: 100%;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;  /* shows entire image but might leave space */
+  background: #f7f7f7;  /* light background to fill gaps */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1.2rem;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.08);
+  transition: box-shadow 0.3s ease;
 }
 
 
@@ -539,6 +540,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .gallery-img {
+    height: 160px;
+  }
+}
 
 
 /* Contact Section */
