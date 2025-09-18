@@ -138,20 +138,82 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Lazy loading for images
+    // Image loading animation functionality
+    const initializeImageLoading = () => {
+        const allImages = document.querySelectorAll('img');
+        
+        allImages.forEach(img => {
+            // Add loading class initially
+            img.classList.add('image-loading');
+            
+            // Create a new image to test loading
+            const testImg = new Image();
+            
+            testImg.onload = () => {
+                // Image loaded successfully
+                img.classList.remove('image-loading');
+                img.classList.add('image-loaded');
+                
+                // Add a small delay for smooth transition
+                setTimeout(() => {
+                    img.style.opacity = '1';
+                }, 100);
+            };
+            
+            testImg.onerror = () => {
+                // Image failed to load
+                img.classList.remove('image-loading');
+                img.classList.add('image-error');
+                img.style.background = '#f8f9fa';
+                img.style.display = 'flex';
+                img.style.alignItems = 'center';
+                img.style.justifyContent = 'center';
+                img.innerHTML = '<span style="color: #6c757d; font-size: 14px;">Image unavailable</span>';
+            };
+            
+            // Set the source to trigger loading
+            testImg.src = img.src;
+        });
+    };
+
+    // Lazy loading for images with loading animation
     const lazyImages = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
+                
+                // Add loading state
+                img.classList.add('image-loading');
+                
+                // Create test image for loading check
+                const testImg = new Image();
+                
+                testImg.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy', 'image-loading');
+                    img.classList.add('image-loaded');
+                    
+                    setTimeout(() => {
+                        img.style.opacity = '1';
+                    }, 100);
+                };
+                
+                testImg.onerror = () => {
+                    img.classList.remove('image-loading');
+                    img.classList.add('image-error');
+                };
+                
+                testImg.src = img.dataset.src;
                 observer.unobserve(img);
             }
         });
     });
 
     lazyImages.forEach(img => imageObserver.observe(img));
+    
+    // Initialize loading animation for all images
+    initializeImageLoading();
 
     // Add loading state to buttons
     const addLoadingState = (button) => {
