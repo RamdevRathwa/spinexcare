@@ -195,6 +195,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     lazyImages.forEach(img => imageObserver.observe(img));
     
+    // Lazy load videos on interaction to avoid crawl errors
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+        video.addEventListener('play', () => {
+            const source = video.querySelector('source[data-src]');
+            if (source && !source.src) {
+                source.src = source.dataset.src;
+                video.load();
+            }
+        }, { once: true });
+    });
+    
     // Initialize loading animation for all images
     initializeImageLoading();
 
