@@ -102,24 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Typing effect for hero title
-    const heroTitle = document.querySelector('.hero-text h1');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        
-        // Start typing effect after a short delay
-        setTimeout(typeWriter, 500);
-    }
+    // Legacy typing effect removed to avoid conflict with rotating hero headings
 
     // Counter animation for stats (if added later)
     const animateCounters = () => {
