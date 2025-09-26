@@ -15,6 +15,43 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Condition Pages -->
+  <url><loc>https://spinexchiropractic.in/pages/Backpain.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Neckpain.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Cervical-lumber-discbulge.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Cervical%20Spondylosis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Sciatica.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Heelpain.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Knee%20arthritis.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Frozen%20Shoulder.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Posture%20Correction.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Cervicogenic%20Headache.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Rotator%20Cuff%20Injury%20Shoulder%20Pain.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Trapezitis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/TMJ%20Jaw%20Pain.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Sports%20Injury.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Body%20Stiffness%20Relief.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Migraine.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Tennis%20Elbow.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Carpal%20Tunnel%20Syndrome.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Plantar%20Fasciitis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/SI-HIP%20Joint%20Pain.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Body%20Alignment.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Spondylosis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Spondylitis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Lordosis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Spondylolisthesis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Kyphosis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Scoliosis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Acid%20Reflux%20and%20Gas.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/IBS%20(Irritable%20Bowel%20Syndrome).html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Ankle%20Sprain.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Gluteal%20Tendinopathy.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/IT%20Band%20Syndrome.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Reduced%20Stress.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Better%20Sleep.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Avascular%20Necrosis.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://spinexchiropractic.in/pages/Ankylosing%20Spondylitis.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url>
     <loc>https://spinexchiropractic.in/gallery.html</loc>
     <changefreq>monthly</changefreq>
