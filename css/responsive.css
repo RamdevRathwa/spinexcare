@@ -42,6 +42,34 @@
         display: none;
     }
 
+    /* Mobile Dropdown Styles */
+    .dropdown-content {
+        position: static;
+        display: block;
+        background: none;
+        box-shadow: none;
+        min-width: auto;
+        padding-left: 2rem;
+        max-height: none;
+        overflow: visible;
+        border-bottom: none;
+    }
+
+    .dropdown-content li {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+
+    .dropdown-toggle i {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
     /* Hero Section */
     .hero {
         padding: 100px 0 60px;

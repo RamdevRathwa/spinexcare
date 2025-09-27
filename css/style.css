@@ -228,6 +228,69 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: var(--white);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    min-width: 250px;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 15px;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-size: 0.95rem;
+}
+
+.dropdown-link:hover {
+    background: var(--light-blue);
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.dropdown-toggle i {
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
 .appointment-btn {
     margin-left: 1.5rem;
 }
