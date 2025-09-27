@@ -236,20 +236,16 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: var(--white);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1000;
+    background-color: #f9f9f9;
     min-width: 250px;
-    border-radius: 6px;
-    top: 100%;
-    left: 0;
-    max-height: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 0; /* Add for smoother transition */
+    visibility: hidden; /* Add for smoother transition */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    max-height: 70vh;
     overflow-y: auto;
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
-    display: block;
 }
 
 .dropdown-content li {
@@ -1039,4 +1035,34 @@ body {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Ensure your desktop dropdown styles are not inside a media query */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide dropdown on mobile by default, will be handled by responsive.css */
+@media (max-width: 992px) {
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+}
+
+/* --- THIS IS THE KEY CHANGE --- */
+/* Show dropdown on DESKTOP HOVER ONLY */
+@media (min-width: 993px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Active state for the main "Services" link (background color) */
+.nav-menu li.dropdown.active > a {
+    background-color: #1a365d; /* Navy Blue */
+    color: white;
 }

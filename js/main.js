@@ -1,20 +1,45 @@
 // Main JavaScript functionality for SpineXcare website
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Hamburger menu toggle for mobile
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
-    hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
+    const servicesDropdown = document.querySelector('.dropdown');
+    const servicesLink = document.querySelector('.dropdown > .nav-link');
 
-    // Close mobile menu when clicking on a link
+    // Toggle hamburger menu
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Toggle services submenu on mobile
+    if (servicesDropdown && servicesLink) {
+        servicesLink.addEventListener('click', function (e) {
+            // Check if we are in mobile view (e.g., hamburger is visible)
+            if (window.getComputedStyle(hamburger).display !== 'none') {
+                e.preventDefault(); // Prevent navigating to services.html on click
+                servicesDropdown.classList.toggle('active');
+            }
+        });
+    }
+
+    // Close the menu when a link is clicked (optional but good for UX)
     document.querySelectorAll('.nav-link, .dropdown-link').forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+        link.addEventListener('click', (e) => {
+            // Don't close if it's the services dropdown toggle
+            if (e.target === servicesLink && window.getComputedStyle(hamburger).display !== 'none') {
+                return;
+            }
+            if (navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                // Also close the services dropdown if it's open
+                if (servicesDropdown.classList.contains('active')) {
+                    servicesDropdown.classList.remove('active');
+                }
+            }
         });
     });
 
