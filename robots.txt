@@ -1,5 +1,21 @@
 User-agent: *
 Allow: /
+Allow: /pages/Backpain.html
+Disallow: /pages/admin/
+Disallow: /pages/private/
+Disallow: /pages/drafts/
+Disallow: /pages/templates/
+
+# Prevent indexing of search results, if any
+Disallow: /*?q=*
+Disallow: /*?s=*
+Disallow: /*?search=*
+
+# Prevent indexing of file types that shouldn't be public
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.md$
 
 Sitemap: https://spinexchiropractic.in/sitemap.xml
 
