@@ -57,33 +57,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Header background change on scroll
+    // Prepare references used during scroll
     const header = document.querySelector('.header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
-        } else {
-            header.style.background = '#ffffff';
-            header.style.backdropFilter = 'none';
-        }
-    });
+    const heroImage = document.querySelector('.hero-img');
 
-    // Animate elements on scroll
+    // Animate elements on scroll + header background + lightweight parallax in one RAF
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.service-card, .info-card, .about-text, .about-image');
-        
+
+        // Fade-in animations
         elements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
-            const elementVisible = 150;
-            
-            if (elementTop < window.innerHeight - elementVisible) {
+            if (elementTop < window.innerHeight - 150) {
                 element.classList.add('fade-in-up');
             }
         });
+
+        // Header style
+        if (header) {
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#ffffff';
+                header.style.backdropFilter = 'none';
+            }
+        }
+
+        // Lightweight parallax
+        if (heroImage) {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.2; // gentler for performance
+            heroImage.style.transform = `translateY(${rate}px)`;
+        }
     };
 
-    // Throttle scroll events for better performance
+    // Throttle scroll with one passive listener
     let ticking = false;
     const handleScroll = () => {
         if (!ticking) {
@@ -95,23 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Initial call to animate elements already in view
     animateOnScroll();
-
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    const heroImage = document.querySelector('.hero-img');
-    
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        
-        if (heroImage) {
-            heroImage.style.transform = `translateY(${rate}px)`;
-        }
-    });
 
     // Service cards hover effect
     const serviceCards = document.querySelectorAll('.service-card');
@@ -146,80 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Image loading animation functionality
-    const initializeImageLoading = () => {
-        const allImages = document.querySelectorAll('img');
-        
-        allImages.forEach(img => {
-            // Add loading class initially
-            img.classList.add('image-loading');
-            
-            // Create a new image to test loading
-            const testImg = new Image();
-            
-            testImg.onload = () => {
-                // Image loaded successfully
-                img.classList.remove('image-loading');
-                img.classList.add('image-loaded');
-                
-                // Add a small delay for smooth transition
-                setTimeout(() => {
-                    img.style.opacity = '1';
-                }, 100);
-            };
-            
-            testImg.onerror = () => {
-                // Image failed to load
-                img.classList.remove('image-loading');
-                img.classList.add('image-error');
-                img.style.background = '#f8f9fa';
-                img.style.display = 'flex';
-                img.style.alignItems = 'center';
-                img.style.justifyContent = 'center';
-                img.innerHTML = '<span style="color: #6c757d; font-size: 14px;">Image unavailable</span>';
-            };
-            
-            // Set the source to trigger loading
-            testImg.src = img.src;
-        });
-    };
-
-    // Lazy loading for images with loading animation
-    const lazyImages = document.querySelectorAll('img[data-src]');
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                
-                // Add loading state
-                img.classList.add('image-loading');
-                
-                // Create test image for loading check
-                const testImg = new Image();
-                
-                testImg.onload = () => {
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy', 'image-loading');
-                    img.classList.add('image-loaded');
-                    
-                    setTimeout(() => {
-                        img.style.opacity = '1';
-                    }, 100);
-                };
-                
-                testImg.onerror = () => {
-                    img.classList.remove('image-loading');
-                    img.classList.add('image-error');
-                };
-                
-                testImg.src = img.dataset.src;
-                observer.unobserve(img);
-            }
-        });
-    });
-
-    lazyImages.forEach(img => imageObserver.observe(img));
-    
     // Lazy load videos on interaction to avoid crawl errors
     const videos = document.querySelectorAll('video');
     videos.forEach(video => {
@@ -231,9 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, { once: true });
     });
-    
-    // Initialize loading animation for all images
-    initializeImageLoading();
 
     // Add loading state to buttons
     const addLoadingState = (button) => {
