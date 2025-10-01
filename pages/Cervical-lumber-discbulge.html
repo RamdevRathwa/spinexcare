@@ -16,6 +16,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/components/breadcrumb.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -28,10 +29,52 @@
                     </a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="../index.html" class="nav-link">Home</a></li>
-                    <li><a href="../about.html" class="nav-link">About</a></li>
-                    <li><a href="../services.html" class="nav-link">Services</a></li>
-                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" aria-current="page">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="./Backpain.html" class="dropdown-link">Back Pain</a></li>
+                            <li><a href="./Neckpain.html" class="dropdown-link">Neck Pain</a></li>
+                            <li><a href="./Cervical-lumber-discbulge.html" class="dropdown-link">Cervical/Lumbar Disc Bulge</a></li>
+                            <li><a href="./Cervical Spondylosis.html" class="dropdown-link">Cervical Spondylosis</a></li>
+                            <li><a href="./Sciatica.html" class="dropdown-link">Sciatica</a></li>
+                            <li><a href="./Heelpain.html" class="dropdown-link">Heel Pain</a></li>
+                            <li><a href="./Knee arthritis.html" class="dropdown-link">Knee Arthritis/Pain</a></li>
+                            <li><a href="./Frozen Shoulder.html" class="dropdown-link">Frozen Shoulder</a></li>
+                            <li><a href="./Posture Correction.html" class="dropdown-link">Posture Correction</a></li>
+                            <li><a href="./Cervicogenic Headache.html" class="dropdown-link">Cervicogenic Headache</a></li>
+                            <li><a href="./Rotator Cuff Injury Shoulder Pain.html" class="dropdown-link">Rotator Cuff Injury/Shoulder Pain</a></li>
+                            <li><a href="./Trapezitis.html" class="dropdown-link">Trapezitis</a></li>
+                            <li><a href="./TMJ Jaw Pain.html" class="dropdown-link">TMJ / Jaw Pain</a></li>
+                            <li><a href="./Sports Injury.html" class="dropdown-link">Sports Injury</a></li>
+                            <li><a href="./Body Stiffness Relief.html" class="dropdown-link">Body Stiffness Relief</a></li>
+                            <li><a href="./Migraine.html" class="dropdown-link">Migraine</a></li>
+                            <li><a href="./Tennis Elbow.html" class="dropdown-link">Tennis Elbow</a></li>
+                            <li><a href="./Carpal Tunnel Syndrome.html" class="dropdown-link">Carpal Tunnel Syndrome</a></li>
+                            <li><a href="./Plantar Fasciitis.html" class="dropdown-link">Plantar Fasciitis</a></li>
+                            <li><a href="./SI-HIP Joint Pain.html" class="dropdown-link">SI-HIP Joint Pain</a></li>
+                            <li><a href="./Body Alignment.html" class="dropdown-link">Body Alignment</a></li>
+                            <li><a href="./Spondylosis.html" class="dropdown-link">Spondylosis</a></li>
+                            <li><a href="./Spondylitis.html" class="dropdown-link">Spondylitis</a></li>
+                            <li><a href="./Lordosis.html" class="dropdown-link">Lordosis</a></li>
+                            <li><a href="./Spondylolisthesis.html" class="dropdown-link">Spondylolisthesis</a></li>
+                            <li><a href="./Kyphosis.html" class="dropdown-link">Kyphosis</a></li>
+                            <li><a href="./Scoliosis.html" class="dropdown-link">Scoliosis</a></li>
+                            <li><a href="./Acid Reflux and Gas.html" class="dropdown-link">Acid Reflux and Gas</a></li>
+                            <li><a href="./IBS (Irritable Bowel Syndrome).html" class="dropdown-link">IBS (Irritable Bowel Syndrome)</a></li>
+                            <li><a href="./Ankle Sprain.html" class="dropdown-link">Ankle Sprain</a></li>
+                            <li><a href="./Gluteal Tendinopathy.html" class="dropdown-link">Gluteal Tendinopathy</a></li>
+                            <li><a href="./IT Band Syndrome.html" class="dropdown-link">IT Band Syndrome</a></li>
+                            <li><a href="./Reduced Stress.html" class="dropdown-link">Reduced Stress</a></li>
+                            <li><a href="./Better Sleep.html" class="dropdown-link">Better Sleep</a></li>
+                            <li><a href="./Avascular Necrosis.html" class="dropdown-link">Avascular Necrosis</a></li>
+                            <li><a href="./Ankylosing Spondylitis.html" class="dropdown-link">Ankylosing Spondylitis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="videos.html" class="nav-link">Videos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="appointment-btn">
                     <a href="tel:9099244119" class="btn-primary">Book Appointment</a>
@@ -94,7 +137,7 @@
                         </ul>
                     </div>
                     <div class="about-image">
-                        <img src="../images/services/disc-bulge-anatomy.jpg" 
+                        <img src="../images/services/Disc Bulgge.png" 
                              alt="Anatomical illustration of cervical and lumbar disc bulge" 
                              class="doctor-img" 
                              loading="lazy" />
@@ -193,6 +236,7 @@
 
     <script src="../js/main.js"></script>
     <script src="../js/form.js"></script>
+    <script src="../js/components/breadcrumb.js"></script>
 </body>
 </html>
 
