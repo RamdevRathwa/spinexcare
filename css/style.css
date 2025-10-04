@@ -992,8 +992,9 @@ body {
 .whatsapp-widget {
     position: fixed;
     bottom: 60px;
-    right: 20px;
-    z-index: 999;
+    right: 15px;          /* keep safe spacing */
+    left: auto;           /* reset any previous left */
+    z-index: 9999;
     background-color: #25D366;
     padding: 8px 12px;
     border-radius: 30px;
@@ -1002,9 +1003,9 @@ body {
     align-items: center;
     gap: 8px;
     transition: transform 0.3s;
-    max-width: 90%;          /* ✅ prevents overflow */
-    box-sizing: border-box;  /* ✅ include padding in width */
-    overflow: hidden;        /* ✅ avoids text spilling */
+    max-width: calc(100% - 30px);  /* ✅ never exceed screen width */
+    box-sizing: border-box;        /* ✅ padding inside width */
+    overflow: hidden;              /* ✅ cut overflow if text too long */
   }
   
   .whatsapp-widget a {
@@ -1014,7 +1015,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 14px;
-    white-space: nowrap;     /* ✅ text stays in one line */
+    white-space: nowrap;           /* ✅ prevent text wrapping */
   }
   
   .whatsapp-widget img {
@@ -1022,15 +1023,16 @@ body {
     height: 24px;
   }
   
-  /* Mobile optimization */
+  /* Extra safety on very small screens */
   @media (max-width: 480px) {
     .whatsapp-widget {
-      right: 10px;  /* ✅ closer to edge */
-      left: 10px;   /* ✅ optional: keeps it inside screen */
-      justify-content: center;
+      right: 10px;
+      max-width: calc(100% - 20px);
+      font-size: 13px;  /* slightly smaller text */
+      padding: 6px 10px;
     }
   }
-  
+    
 
 /* Utility Classes */
 .text-center {
