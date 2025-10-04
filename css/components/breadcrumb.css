@@ -175,11 +175,7 @@
 }
 
 @media (max-width: 480px) {
-    .breadcrumb-item span:not(.breadcrumb-separator) {
-        display: none;
-    }
-    
-    .breadcrumb-item.active span {
-        display: inline;
+    .breadcrumb-item span {
+        display: inline; /* always show text */
     }
 }
