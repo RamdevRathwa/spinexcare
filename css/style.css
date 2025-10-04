@@ -990,33 +990,47 @@ body {
 }
 
 .whatsapp-widget {
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-  z-index: 999;
-  background-color: #25D366;
-  padding: 8px 12px;
-  border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: transform 0.3s;
-}
-
-.whatsapp-widget a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.whatsapp-widget img {
-  width: 24px;
-  height: 24px;
-}
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 999;
+    background-color: #25D366;
+    padding: 8px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s;
+    max-width: 90%;          /* ✅ prevents overflow */
+    box-sizing: border-box;  /* ✅ include padding in width */
+    overflow: hidden;        /* ✅ avoids text spilling */
+  }
+  
+  .whatsapp-widget a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;     /* ✅ text stays in one line */
+  }
+  
+  .whatsapp-widget img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Mobile optimization */
+  @media (max-width: 480px) {
+    .whatsapp-widget {
+      right: 10px;  /* ✅ closer to edge */
+      left: 10px;   /* ✅ optional: keeps it inside screen */
+      justify-content: center;
+    }
+  }
+  
 
 /* Utility Classes */
 .text-center {
