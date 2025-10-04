@@ -18,6 +18,12 @@ body {
     padding: 0 20px;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;   /* 🔑 stops horizontal scrolling */
+  }
+  
+
 /* Color Variables */
 :root {
     --primary-blue: #1e3a8a;
@@ -1089,3 +1095,8 @@ html {
     background-color: #1a365d; /* Navy Blue */
     color: white;
 }
+
+body {
+    overflow-x: hidden !important;
+  }
+  
