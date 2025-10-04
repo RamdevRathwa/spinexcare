@@ -18,4 +18,6 @@ Disallow: /*.txt$
 Disallow: /*.md$
 
 Sitemap: https://spinexchiropractic.in/sitemap.xml
+Sitemap: https://spinexchiropractic.in/video-sitemap.xml
+Sitemap: https://spinexchiropractic.in/sitemap-index.xml
 

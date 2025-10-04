@@ -948,6 +948,56 @@ html, body {
     font-weight: 600;
 }
 
+/* Video Info Styles for SEO */
+.video-info {
+    padding: 1rem 0;
+    text-align: left;
+}
+
+.video-info h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.video-info p {
+    font-size: 0.95rem;
+    color: var(--gray);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+/* Video SEO Enhancements */
+.video-card video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Video Thumbnail Styles */
+.video-card video[poster] {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Video Loading States */
+.video-card video:not([poster]) {
+    background: linear-gradient(45deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    animation: video-loading 1s linear infinite;
+}
+
+@keyframes video-loading {
+    0% { background-position: 0 0; }
+    100% { background-position: 20px 20px; }
+}
+
 /* Footer */
 .footer {
     background: var(--primary-blue);

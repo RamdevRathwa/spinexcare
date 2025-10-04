@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Video 1: Patient Testimonial - Back Pain Relief -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-1-thumb.jpg</video:thumbnail_loc>
+      <video:title>Patient Testimonial: Back Pain Relief at Spine-X Chiropractic</video:title>
+      <video:description>Real patient shares their experience with back pain treatment at Spine-X Chiropractic Clinic in Vadodara. See how our expert chiropractic care helped them find relief.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/Vid-1.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>150</video:duration>
+      <video:publication_date>2024-01-15T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>chiropractic treatment</video:tag>
+      <video:tag>back pain relief</video:tag>
+      <video:tag>patient testimonial</video:tag>
+      <video:tag>vadodara chiropractor</video:tag>
+      <video:tag>spinal adjustment</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Video 2: Neck Pain Treatment Success Story -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-2-thumb.jpg</video:thumbnail_loc>
+      <video:title>Neck Pain Treatment Success Story - Spine-X Chiropractic</video:title>
+      <video:description>Patient testimonial showing effective neck pain treatment and relief through chiropractic care. Learn about our proven treatment methods.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/Vid-2.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>195</video:duration>
+      <video:publication_date>2024-01-20T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>neck pain treatment</video:tag>
+      <video:tag>chiropractic care</video:tag>
+      <video:tag>patient success story</video:tag>
+      <video:tag>vadodara physiotherapy</video:tag>
+      <video:tag>cervical spine treatment</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Video 3: Physiotherapy Treatment Demonstration -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-3-thumb.jpg</video:thumbnail_loc>
+      <video:title>Physiotherapy Treatment Demonstration - Spine-X Chiropractic</video:title>
+      <video:description>Professional physiotherapy treatment session showing advanced techniques used at our clinic. See our expert approach to patient care.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/Vid-3.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>240</video:duration>
+      <video:publication_date>2024-01-25T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>physiotherapy demonstration</video:tag>
+      <video:tag>chiropractic techniques</video:tag>
+      <video:tag>treatment methods</video:tag>
+      <video:tag>professional therapy</video:tag>
+      <video:tag>vadodara clinic</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Video 4: Chiropractic Adjustment Demonstration -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-4-thumb.jpg</video:thumbnail_loc>
+      <video:title>Chiropractic Adjustment Demonstration - Spine-X Chiropractic</video:title>
+      <video:description>Professional chiropractic adjustment demonstration showing safe and effective spinal manipulation techniques used at our clinic.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/vid-4.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:publication_date>2024-01-30T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>chiropractic adjustment</video:tag>
+      <video:tag>spinal manipulation</video:tag>
+      <video:tag>treatment demonstration</video:tag>
+      <video:tag>professional care</video:tag>
+      <video:tag>vadodara chiropractor</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Video 5: Exercise Therapy Demonstration -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-5-thumb.jpg</video:thumbnail_loc>
+      <video:title>Exercise Therapy Demonstration - Spine-X Chiropractic</video:title>
+      <video:description>Exercise therapy demonstration showing rehabilitation exercises and therapeutic movements used in our treatment programs.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/vid-5.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>200</video:duration>
+      <video:publication_date>2024-02-05T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>exercise therapy</video:tag>
+      <video:tag>rehabilitation exercises</video:tag>
+      <video:tag>therapeutic movements</video:tag>
+      <video:tag>treatment programs</video:tag>
+      <video:tag>vadodara physiotherapy</video:tag>
+    </video:video>
+  </url>
+
+  <!-- Video 6: Cupping Therapy Demonstration -->
+  <url>
+    <loc>https://spinexchiropractic.in/videos.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://spinexchiropractic.in/images/video-thumbnails/vid-6-thumb.jpg</video:thumbnail_loc>
+      <video:title>Cupping Therapy Demonstration - Spine-X Chiropractic</video:title>
+      <video:description>Cupping therapy demonstration showing this traditional treatment method used for pain relief and muscle tension release.</video:description>
+      <video:content_loc>https://spinexchiropractic.in/images/Videos/vid-6.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">https://spinexchiropractic.in/videos.html</video:player_loc>
+      <video:duration>160</video:duration>
+      <video:publication_date>2024-02-10T10:00:00+05:30</video:publication_date>
+      <video:category>Health & Fitness</video:category>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:tag>cupping therapy</video:tag>
+      <video:tag>pain relief</video:tag>
+      <video:tag>muscle tension</video:tag>
+      <video:tag>traditional treatment</video:tag>
+      <video:tag>vadodara therapy</video:tag>
+    </video:video>
+  </url>
+
+</urlset>

@@ -777,24 +777,50 @@
                 <p><a class="nav-link" href="videos.html" aria-label="See all videos">See all videos →</a></p>
             </div>
             <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-card">
-                        <video controls preload="metadata" aria-label="Patient testimonial about back pain relief">
-                            <source src="images/Videos/Vid-1.mp4" type="video/mp4" />
-                        </video>
+                <div class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+                    <video controls preload="metadata" poster="images/video-thumbnails/vid-1-thumb.jpg" aria-label="Patient testimonial about back pain relief at Spine-X Chiropractic">
+                        <source src="images/Videos/Vid-1.mp4" type="video/mp4" />
+                        <track kind="captions" src="captions/vid-1.vtt" srclang="en" label="English" default />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 itemprop="name">Patient Testimonial: Back Pain Relief</h3>
+                        <p itemprop="description">Real patient shares their experience with back pain treatment at Spine-X Chiropractic Clinic in Vadodara.</p>
+                        <meta itemprop="duration" content="PT2M30S" />
+                        <meta itemprop="uploadDate" content="2024-01-15" />
+                        <meta itemprop="thumbnailUrl" content="https://spinexchiropractic.in/images/video-thumbnails/vid-1-thumb.jpg" />
+                        <meta itemprop="contentUrl" content="https://spinexchiropractic.in/images/Videos/Vid-1.mp4" />
                     </div>
                 </div>
-                <div class="video-card">
-                    <video controls aria-label="Patient testimonial about neck pain treatment at Spine-X Chiropractic" >
+                <div class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+                    <video controls preload="metadata" poster="images/video-thumbnails/vid-2-thumb.jpg" aria-label="Patient testimonial about neck pain treatment at Spine-X Chiropractic">
                         <source src="images/Videos/vid-2.mp4" type="video/mp4">
+                        <track kind="captions" src="captions/vid-2.vtt" srclang="en" label="English" default />
                         Your browser does not support the video tag.
                     </video>
+                    <div class="video-info">
+                        <h3 itemprop="name">Neck Pain Treatment Success</h3>
+                        <p itemprop="description">Patient testimonial showing effective neck pain treatment and relief through chiropractic care.</p>
+                        <meta itemprop="duration" content="PT3M15S" />
+                        <meta itemprop="uploadDate" content="2024-01-20" />
+                        <meta itemprop="thumbnailUrl" content="https://spinexchiropractic.in/images/video-thumbnails/vid-2-thumb.jpg" />
+                        <meta itemprop="contentUrl" content="https://spinexchiropractic.in/images/Videos/vid-2.mp4" />
+                    </div>
                 </div>
-                <div class="video-card">
-                    <video controls aria-label="Patient testimonial about physiotherapy at Spine-X Chiropractic" >
+                <div class="video-card" itemscope itemtype="https://schema.org/VideoObject">
+                    <video controls preload="metadata" poster="images/video-thumbnails/vid-3-thumb.jpg" aria-label="Patient testimonial about physiotherapy at Spine-X Chiropractic">
                         <source src="images/Videos/vid-3.mp4" type="video/mp4">
+                        <track kind="captions" src="captions/vid-3.vtt" srclang="en" label="English" default />
                         Your browser does not support the video tag.
                     </video>
+                    <div class="video-info">
+                        <h3 itemprop="name">Physiotherapy Treatment Demo</h3>
+                        <p itemprop="description">Professional physiotherapy treatment session showing advanced techniques used at our clinic.</p>
+                        <meta itemprop="duration" content="PT4M00S" />
+                        <meta itemprop="uploadDate" content="2024-01-25" />
+                        <meta itemprop="thumbnailUrl" content="https://spinexchiropractic.in/images/video-thumbnails/vid-3-thumb.jpg" />
+                        <meta itemprop="contentUrl" content="https://spinexchiropractic.in/images/Videos/vid-3.mp4" />
+                    </div>
                 </div>
                 <div class="video-card">
                     <video controls aria-label="Chiropractic adjustment demonstration at Spine-X Chiropractic" >
